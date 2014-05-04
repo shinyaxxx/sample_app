@@ -1,0 +1,36 @@
+source 'https://rubygems.org'
+
+ruby '2.1.1'
+
+gem 'rails', '4.1.0'
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'selenium-webdriver'
+  gem 'capybara'
+end
+
+group :assets do
+  gem 'sprockets-rails', :git => 'https://github.com/rails/sprockets-rails.git'
+  gem 'sass-rails',      :git => 'https://github.com/rails/sass-rails.git'
+  gem 'coffee-rails',    :git => 'https://github.com/rails/coffee-rails.git'
+end
+
+gem 'uglifier'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder'
+
+group :doc do
+  gem 'sdoc', require: false
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
