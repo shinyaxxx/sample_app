@@ -3,6 +3,11 @@ source 'https://rubygems.org'
 ruby '2.1.1'
 
 gem 'rails', '4.1.0'
+gem 'uglifier'
+gem 'jquery-rails'
+gem 'turbolinks'
+gem 'jbuilder'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'sqlite3'
@@ -20,11 +25,6 @@ group :assets do
   gem 'coffee-rails',    :git => 'https://github.com/rails/coffee-rails.git'
 end
 
-gem 'uglifier'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder'
-
 group :doc do
   gem 'sdoc', require: false
 end
@@ -33,4 +33,3 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
-
